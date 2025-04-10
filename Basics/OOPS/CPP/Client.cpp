@@ -17,6 +17,6 @@ int main(){
     paymentService->makePayment(creditCard, 100.0);
     paymentService->makePayment(debitCard, 50.0);
     paymentService->makePayment(upi, 75.0);
-    return 0;
     delete paymentService;
+    return 0;
 }
