@@ -4,6 +4,9 @@
 #include <iostream>
 using namespace std;
 
+// single responsibility principle - each class should have one reason to change
+// invoice class should only be responsible for generating invoice and not for saving to database or sending email
+// this is a bad code example as it violates the single responsibility principle
 class Invoice{
    private:
    double amount;
