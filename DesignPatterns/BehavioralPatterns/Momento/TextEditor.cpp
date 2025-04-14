@@ -10,7 +10,10 @@ class TextEditor{
       string text;
    public:
    void write(string str){
-       text += str;
+    if (!text.empty()) {
+        text += ' ';
+    }
+    text += str;
    }
    string getContent(){
        return text;
